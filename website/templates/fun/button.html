@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block head %}
+<meta property="og:url" content="http://www.powi.club/fun/button">
+<meta property="og:title" content="Powi Button">
+<meta property="og:description" content="LE ! BOUTON !!!">
+<link rel="stylesheet" href="{{url_for('static', filename='css/fun/button.css')}}">
+{% endblock %}
+{% block content %}
+<button class="button" onclick="counter()"><img src="{{url_for('static', filename='images/powi.png')}}" height="40px"></button>
+<div id="myProgress">
+    <div id="myBar"></div>
+</div>
+<div id="counter_div" style="margin-top: 3px;">Score : 0</div>
+<script src="{{url_for('static', filename='js/fun/button.js')}}"></script>
+{% endblock %}

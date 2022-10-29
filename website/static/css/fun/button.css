@@ -1,0 +1,41 @@
+body {
+    color: white;
+}
+
+.button
+{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #5865f2;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 10px #999;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    transition: transform 200ms, box-shadow 200ms;
+}
+
+.button:active
+{
+    box-shadow: 0 0 #999;
+    transform: translateY(10px);
+}
+
+#myProgress 
+{
+    width: 100%;
+    border-radius: 45px;
+    background-color: grey;
+}
+  
+#myBar 
+{
+    width: 0%;
+    height: 30px;
+    border-radius: 45px;
+    background-color: #5865f2;
+}

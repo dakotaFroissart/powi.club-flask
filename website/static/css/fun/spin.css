@@ -1,0 +1,17 @@
+#powheel {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80vmin;
+    height: 80vmin;
+    max-width: 512px;
+    max-height: 512px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    transition: transform cubic-bezier(.24,1.03,.88,1) 5s;
+    z-index: 50;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}

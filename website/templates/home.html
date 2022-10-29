@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block head %}
+<meta property="og:url" content="http://www.powi.club/">
+<meta property="og:title" content="Powi Club">
+<meta property="og:description" content="Bienvenue sur le site du Powi Club !">
+<link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">
+{% endblock %}
+{% block title %}Powi Club{% endblock %}
+{% block content %}
+<main>
+    <!-- <section>
+        <img class="mySlides" src="{{url_for('static', filename='')}}" style="height:30rem;">
+        <img class="mySlides" src="{{url_for('static', filename='')}}" style="height:30rem;">
+        <img class="mySlides" src="{{url_for('static', filename='')}}" style="height:30rem;">
+    </section> -->
+    <div id="desc">
+        Le Powi Club est une communauté publique, rassemblant des amis de toute la France, se rassemblant sur Discord, fondée par Aza'.
+        <br>Il y existe des rôles, quelques petites règles de "bienséance" et un bot, du nom de Liana, mis à disposition de tous, servant autant à la modération du serveur qu'à son divertissement.
+    </div>
+</main>
+<!-- <script src="{{url_for('static', filename='js/slideshow.js')}}"></script> -->
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block head %}
+<meta property="og:url" content="http://www.powi.club/fun/spin">
+<meta property="og:title" content="Powi Spinning">
+<meta property="og:description" content="Spin the Powi!">
+<link rel="stylesheet" href="{{url_for('static', filename='css/fun/spin.css')}}">
+{% endblock %}
+{% block title %}Powi Spinning{% endblock %}
+{% block content %}
+<img src="{{url_for('static', filename='images/powi.png')}}" alt="Powi Spinning" id="powheel" onclick="spin()">
+<script src="{{url_for('static', filename='js/fun/spin.js')}}"></script>
+{% endblock %}
